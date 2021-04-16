@@ -1,7 +1,7 @@
 import React from 'react';
 import VideoItem from './VideoItem';
 
-const VideoList = ({ videos, onVideoSelect }) => {//Desturctions props to only get videos
+const VideoList = ({ videos, onVideoSelect }) => {//Destructuring props 
     const renderedList = videos.map((video) => {
         return <VideoItem key={video.id.videoId} onVideoSelect={onVideoSelect} video={video} />
     });
